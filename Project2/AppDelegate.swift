@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Project2
-//
-//  Created by John Nyquist on 3/13/19.
-//  Copyright © 2019 Nyquist Art + Logic LLC. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
