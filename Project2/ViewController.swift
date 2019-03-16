@@ -66,6 +66,7 @@ class ViewController: UIViewController {
     @objc func shareTapped() {
 
         let ac = UIAlertController(title: "Score", message: "Your score is \(score)", preferredStyle: .alert)
+        
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
         
         present(ac, animated: true)
