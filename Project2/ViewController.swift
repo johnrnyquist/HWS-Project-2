@@ -60,7 +60,16 @@ class ViewController: UIViewController {
             ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             title = "\(countries[correctAnswer].uppercased()) Score: \(score)"
         }
-        present(ac, animated: true)
+        UIView.animate(withDuration: 0.125,
+                       delay: 0,
+                       options: [],
+                       animations: { sender.transform = CGAffineTransform(scaleX: 0.95, y: 0.95) })
+                    { _ in
+                        UIView.animate(withDuration: 0.125,
+                                       delay: 0,
+                                       options: [],
+                                       animations: { sender.transform = .identity }) { _ in self.present(ac, animated: true) }
+                    }
     }
     
     @objc func shareTapped() {
